@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package checkers;
+
+message State {
+    string user1 = 1;
+    string user2 = 2;
+    string user_turn = 3;
+    repeated int32 board = 4;
+    bool is_king = 5;
+}
